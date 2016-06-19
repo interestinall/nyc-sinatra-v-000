@@ -1,0 +1,9 @@
+<h1>List of Figures</h1>
+    <% @figures.each do |figure| %>
+     <a href="/figures/<%= figure.id %>"><%= figure.name %></a>
+      <br>
+        <%figure.titles.each do |title|%>
+        <%=title.name%>
+        <%end%>
+  <% end %>
+<br>
